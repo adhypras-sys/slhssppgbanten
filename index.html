@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Dashboard Pemantauan SLHS SPPG - Provinsi Sulawesi Tenggara</title>
+    <title>Dashboard Pemantauan SLHS SPPG - Provinsi Banten</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -167,7 +167,7 @@
                 <h1 class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 tracking-tight leading-tight">
                     Dashboard SLHS SPPG
                 </h1>
-                <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm mt-2 font-medium leading-relaxed">Pemantauan Sertifikat Laik Higiene Sanitasi (SLHS) Satuan Pelayanan Pemenuhan Gizi (SPPG) Provinsi Sulawesi Tenggara</p>
+                <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm mt-2 font-medium leading-relaxed">Pemantauan Sertifikat Laik Higiene Sanitasi (SLHS) Satuan Pelayanan Pemenuhan Gizi (SPPG) Provinsi Banten</p>
             </div>
             
             <!-- Right Side: Controls (Icons & Filter) -->
@@ -193,7 +193,7 @@
                             <i class="fas fa-map-marker-alt text-slate-400 dark:text-slate-500"></i>
                         </div>
                         <select id="kabKotaFilter" onchange="handleFilterChange()" class="block w-full pl-9 pr-10 py-2.5 text-sm font-semibold border-slate-200 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 rounded-xl appearance-none bg-white dark:bg-slate-800 dark:text-white transition-colors cursor-pointer truncate">
-                            <option value="Semua">Provinsi Sulawesi Tenggara</option>
+                            <option value="Semua">Provinsi Banten</option>
                             <!-- Options populated via JS -->
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500 dark:text-slate-400">
@@ -955,7 +955,7 @@
                 });
 
                 const tfoot = document.getElementById('rekapTableFoot');
-                let labelTotal = filterValue === 'Semua' ? 'Provinsi Sulawesi Tenggara' : escapeHTML(filterValue);
+                let labelTotal = filterValue === 'Semua' ? 'Provinsi Banten' : escapeHTML(filterValue);
                 
                 tfoot.innerHTML = `
                     <tr>
