@@ -675,7 +675,7 @@
         function processData(data) {
             try {
                 cleanData = data.filter((row, index) => {
-                    if (index < 2) return false; 
+                    if (index < 3) return false; 
 
                     let nama = row[COL.NAMA_SPPG] ? String(row[COL.NAMA_SPPG]).trim() : '';
                     let kabKota = row[COL.KAB_KOTA] ? String(row[COL.KAB_KOTA]).trim() : '';
